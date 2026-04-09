@@ -266,10 +266,10 @@ export default function Home() {
         }}
       >
         <div
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage: `url(https://d2xsxph8kpxj0f.cloudfront.net/310519663214941065/GLLQaF6kziKTz8BxXU5mDz/tef-bg-MbX9X9S39qRd2dBm7TCCYu.webp)`,
-            backgroundSize: "cover",
+            backgroundImage: `radial-gradient(circle at 20% 20%, rgba(0, 135, 74, 0.38), transparent 28%), radial-gradient(circle at 80% 18%, rgba(59, 130, 246, 0.22), transparent 24%), linear-gradient(115deg, rgba(255, 255, 255, 0.06) 0%, transparent 34%), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px 48px), repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 48px)`,
+            backgroundSize: "auto, auto, auto, 48px 48px, 48px 48px",
             backgroundPosition: "center",
           }}
         />
@@ -285,7 +285,7 @@ export default function Home() {
           </div>
           <div className="hidden md:flex items-center gap-2 text-xs text-slate-400 font-mono">
             <span className="w-2 h-2 rounded-full bg-[#00874A] animate-pulse" />
-            Validation 100% locale — aucun fichier transmis
+            Traitement dans le navigateur de l'utilisateur — aucune donnee stockee ou transmise a un autre fournisseur de services
           </div>
         </div>
       </header>
@@ -446,7 +446,7 @@ export default function Home() {
                   <li>· Vérification des totaux de contrôle</li>
                   <li>· Séparateur de ligne : CRLF</li>
                 </ul>
-                <p className="mt-2 text-blue-500 italic">Traitement 100% local — aucune donnée transmise.</p>
+                <p className="mt-2 text-blue-500 italic">Traitement dans le navigateur de l'utilisateur — aucune donnee stockee ou transmise a un autre fournisseur de services.</p>
               </div>
             )}
           </div>
@@ -522,9 +522,11 @@ export default function Home() {
       <footer className="border-t border-slate-200 bg-white py-4">
         <div className="container flex items-center justify-between text-xs text-slate-400 font-mono">
           <span>Validateur TEF Desjardins · CPA-005</span>
-          <span>Validation locale · Aucune donnée transmise</span>
+          <span>Traitement dans le navigateur de l'utilisateur · Aucune donnee stockee ou transmise a un autre fournisseur de services</span>
         </div>
       </footer>
     </div>
   );
 }
+
+
