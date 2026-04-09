@@ -285,7 +285,7 @@ export default function Home() {
           </div>
           <div className="hidden md:flex items-center gap-2 text-xs text-slate-400 font-mono">
             <span className="w-2 h-2 rounded-full bg-[#00874A] animate-pulse" />
-            Traitement dans le navigateur de l'utilisateur — aucune donnee stockee ou transmise a un autre fournisseur de services
+            Traitement dans le navigateur de l'utilisateur — aucune donnee stockee
           </div>
         </div>
       </header>
