@@ -43,8 +43,6 @@ pnpm -v
 pnpm install
 ```
 
-If your repo is inside OneDrive, it is a good idea to pause syncing during install/build steps. OneDrive can temporarily lock files in `node_modules` on Windows.
-
 ## Run In Development
 
 ```powershell
@@ -84,7 +82,6 @@ pnpm preview
 ## Notes
 
 - Validation is intended to run locally in the browser so files are not uploaded to a remote backend during normal use.
-- The app is now a static frontend and can be hosted on GitHub Pages.
 
 ## Troubleshooting
 
@@ -113,7 +110,3 @@ Suggested fix:
 Remove-Item -Recurse -Force node_modules
 pnpm install
 ```
-
-## License
-
-MIT
